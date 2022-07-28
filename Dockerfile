@@ -5,7 +5,7 @@ RUN mkdir -p /app/build /app/certification
 WORKDIR /app
 
 ADD ./build ./build
-ADD ./certicication ./certification
+ADD ./certification ./certification
 
 RUN rm /etc/nginx/conf.d/default.conf
 
