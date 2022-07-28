@@ -10,7 +10,9 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 COPY ./nginx.conf /etc/nginx/conf.d
 
-COPY ../../../.keystore/* ./.keystore
+COPY ../../../.keystore/_wildcard_doit-cloud_co_kr.crt.pem ./.keystore
+COPY ../../../.keystore/_wildcard_doit-cloud_co_kr.key.latest ./.keystore
+
 
 EXPOSE 443
 
