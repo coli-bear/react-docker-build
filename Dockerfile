@@ -10,7 +10,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 COPY ./nginx.conf /etc/nginx/conf.d
 
-COPY ~/.keystore/* /app/.keystore
+COPY /home/ubuntu/.keystore/* /app/.keystore
 
 EXPOSE 443
 
